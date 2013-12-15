@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9924CC2A-9F92-4132-86F8-4E94FD7C15C9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowsFormsApplication1</RootNamespace>
+    <AssemblyName>PandyDiary</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Phidget21.NET, Version=2.1.8.176, Culture=neutral, PublicKeyToken=c2b1f2a3594bce52, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files\Phidgets\Phidget21.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="PandyFood.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PandyFood.Designer.cs">
+      <DependentUpon>PandyFood.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PandyRest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PandyRest.Designer.cs">
+      <DependentUpon>PandyRest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PandySocial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PandySocial.Designer.cs">
+      <DependentUpon>PandySocial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PandyVisDesg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PandyVisDesg.Designer.cs">
+      <DependentUpon>PandyVisDesg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PandyApp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PandyApp.Designer.cs">
+      <DependentUpon>PandyApp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl2.Designer.cs">
+      <DependentUpon>UserControl2.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="PandyFood.resx">
+      <DependentUpon>PandyFood.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PandyRest.resx">
+      <DependentUpon>PandyRest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PandySocial.resx">
+      <DependentUpon>PandySocial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PandyVisDesg.resx">
+      <DependentUpon>PandyVisDesg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PandyApp.resx">
+      <DependentUpon>PandyApp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pandy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PandyVisDesg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cleanpandy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vibrationmotor.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vibrationmotoron.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rfid.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rfidon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pressuresensorblack - Copy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pressuresensoronblack - Copy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\speakeron.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\speaker.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chargerporton.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chargerport.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pressuresensor.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pressuresensoron.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bluecollar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bamboo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bow.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\present.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\present1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cupcake.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cupcake1.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
